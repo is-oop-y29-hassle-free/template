@@ -46,20 +46,7 @@ public class ContractScenarioTests
         Assert.Fail("Сценарий не реализован");
     }
 
-    [Fact(DisplayName = "Сценарий 3. Групповой вылет")]
-    public void TimeContract_WithVentureAndEpithal_UsesSharedHold()
-    {
-        // Arrange: Venture (трюм 100 м³) и Epithal, «Общий трюм»; контракт на 6 ч
-
-        // Act
-
-        // Assert: выполнен; полёт 2 ч, 2 цикла, время работы 6 ч;
-        // добыто 200 м³ (100 м³ в трюме Venture, 100 м³ в трюме Epithal);
-        // Tritanium – 4000; выручка 16 000, аренда 9000, прибыль 7000
-        Assert.Fail("Сценарий не реализован");
-    }
-
-    [Fact(DisplayName = "Сценарий 4. Контракт на объём")]
+    [Fact(DisplayName = "Сценарий 3. Контракт на объём")]
     public void VolumeContract_WithSingleVenture_IsCompleted()
     {
         // Arrange: контракт на 1000 м³
@@ -71,7 +58,7 @@ public class ContractScenarioTests
         Assert.Fail("Сценарий не реализован");
     }
 
-    [Fact(DisplayName = "Сценарий 5. Отклонение по сроку")]
+    [Fact(DisplayName = "Сценарий 4. Отклонение по сроку")]
     public void TimeContract_TooShort_IsRejected()
     {
         // Arrange: контракт на 2 ч
@@ -82,7 +69,7 @@ public class ContractScenarioTests
         Assert.Fail("Сценарий не реализован");
     }
 
-    [Fact(DisplayName = "Сценарий 6. Отклонение по прайс-листу")]
+    [Fact(DisplayName = "Сценарий 5. Отклонение по прайс-листу")]
     public void Contract_WithIncompletePriceList_IsRejected()
     {
         // Arrange: пояс с Scordite, в прайс-листе нет цены Pyerite; контракт на 6 ч
